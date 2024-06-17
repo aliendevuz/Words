@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    Back SplashScreen    -->
+    <include
+        android:id="@+id/back_splashscreen"
+        layout="@layout/back_splashscreen" />
+
+    <!--    Page    -->
+    <FrameLayout
+        android:id="@+id/parent_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    Background Page    -->
+        <FrameLayout
+            android:id="@+id/parent_page_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/page_back_welcome"
+                layout="@layout/page_back_welcome" />
+
+            <include
+                android:id="@+id/page_back_home"
+                layout="@layout/page_back_home" />
+
+        </FrameLayout>
+
+        <!--    Foreground Page    -->
+        <FrameLayout
+            android:id="@+id/parent_page_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/page_fore_welcome"
+                layout="@layout/page_fore_welcome" />
+
+            <include
+                android:id="@+id/page_fore_home"
+                layout="@layout/page_fore_home" />
+
+        </FrameLayout>
+
+        <!--    Lock Page    -->
+        <Button
+            android:id="@+id/lock_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--    Side    -->
+    <FrameLayout
+        android:id="@+id/parent_side"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    Background Side    -->
+        <FrameLayout
+            android:id="@+id/parent_side_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <!--    Foreground Side    -->
+        <FrameLayout
+            android:id="@+id/parent_side_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <!--    Lock Side    -->
+        <Button
+            android:id="@+id/lock_side"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--    Move    -->
+    <FrameLayout
+        android:id="@+id/parent_move"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    Lock Move    -->
+        <Button
+            android:id="@+id/lock_move"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--    Nothing    -->
+    <FrameLayout
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

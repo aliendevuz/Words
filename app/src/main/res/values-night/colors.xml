@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+<!--    <color name="background">@color/black</color>-->
+    <color name="color_welcome_text">#FFFFFF</color>
+    <color name="green2">#64DD17</color>
+    <color name="color_welcome_gradient_start">#400080FF</color>
+    <color name="color_welcome_gradient_end">#400080FF</color>
+    <!--     <color name="logo_cube_1">#0040FF</color> -->
+    <!--     <color name="logo_cube_2">#FF0030</color> -->
+    <!--     <color name="logo_cube_3">#FFFFFF</color> -->
+    <!--     <color name="logo_cube_stroke_1">#800040FF</color> -->
+    <!--     <color name="logo_cube_stroke_2">#80FF0030</color> -->
+    <!--     <color name="logo_cube_stroke_3">#40000000</color> -->
+    <color name="logo_cube_1">#0040FF</color>
+    <color name="logo_cube_2">#FF0030</color>
+    <color name="logo_cube_3">#FFFFFF</color>
+    <color name="logo_cube_stroke_1">#800040FF</color>
+    <color name="logo_cube_stroke_2">#80FF0030</color>
+    <color name="logo_cube_stroke_3">#40FFFFFF</color>
+    <!--     <color name="back_splashscreen">#131115</color> -->
+    <!--     <color name="back_splashscreen">#101827</color> -->
+    <!--     <color name="back_splashscreen">#0D0A22</color> -->
+<!--    <color name="back_splashscreen">#0A0A22</color>-->
+    <!--     <color name="logo_line">#4FADFF</color> -->
+<!--    <color name="logo_line">#924FFF</color>-->
+    <!--     <color name="logo_line">#4FEAFF</color> -->
+    <!--     <color name="logo_splashscreen">#EBF9FF</color> -->
+<!--    <color name="logo_splashscreen">@color/white</color>-->
+<!--    <color name="logo_line">#924FFF</color>-->
+<!--    <color name="logo_line">#271E52</color>-->
+
+
+    <color name="logo_back">#352875</color>
+    <color name="logo">#D1CCEB</color>
+    <color name="logo_line">#D1CCEB</color>
+    <color name="splashscreen_back">#272047</color>
+    <color name="splashscreen">#D1CCEB</color>
+    <color name="splashscreen_line">#6150B3</color>
+
+</resources>

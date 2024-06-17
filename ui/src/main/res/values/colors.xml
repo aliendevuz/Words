@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#E1FFE8</color>
+<!--    <color name="background">#FFFFFF</color>-->
+
+    <color name="color_welcome_text">#0C6A96</color>
+    <color name="color_welcome_gradient_start">#80FF00AA</color>
+    <color name="color_welcome_gradient_end">#8000AAFF</color>
+
+    <color name="splashscreen_back">#29C258</color>
+
+</resources>
