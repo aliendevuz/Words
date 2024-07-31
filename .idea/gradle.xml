@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/pager" />
             <option value="$PROJECT_DIR$/app/ui" />
+            <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/test" />
             <option value="$PROJECT_DIR$/test/constants" />
             <option value="$PROJECT_DIR$/test/linker" />
