@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "uz.alien.dictup"
+    namespace = "uz.alien.words"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "uz.alien.dictup"
+        applicationId = "uz.alien.words"
         minSdk = 28
         targetSdk = 34
         versionCode = 18
@@ -42,6 +42,6 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.splashscreen)
-    implementation(project(":pager"))
-    implementation(project(":ui"))
+    implementation(project(":app:pager"))
+    implementation(project(":app:ui"))
 }

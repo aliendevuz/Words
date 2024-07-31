@@ -21,5 +21,11 @@ dependencyResolutionManagement {
 
 rootProject.name = "Words"
 include(":app")
-include(":pager")
-include(":ui")
+include(":app:pager")
+include(":app:ui")
+include(":test")
+include(":test:manager")
+include(":test:constants")
+include(":test:ui")
+include(":test:linker")
+include(":test:pager")

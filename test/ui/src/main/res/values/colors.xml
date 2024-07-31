@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="background">#E1FFE8</color>-->
+<!--    <color name="background">#F2F2F2</color>-->
+<!--    <color name="background">#DBDDE6</color>-->
+        <color name="background">#FFFFFF</color>
+
+    <color name="color_welcome_text">#0C6A96</color>
+    <color name="color_welcome_gradient_start">#30FF00AA</color>
+    <color name="color_welcome_gradient_end">#3000AAFF</color>
+
+<!--    <color name="splashscreen_back">#29C258</color>-->
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#00AAFF</color>
+    <color name="light_green">#29C258</color>
+
+<!--    <color name="background">#F2F2F2</color>-->
+
+    <!--    <color name="black">#000000</color>-->
+    <!--    <color name="white">#FFFFFF</color>-->
+
+    <!--    <color name="background">@color/white</color>-->
+    <color name="blue_back">#00AAFF</color>
+    <color name="blue_text">#CC00C4FF</color>
+    <!--     <color name="green">#00BB00</color> -->
+    <color name="green">#00e05d</color>
+    <color name="green2">#00C853</color>
+    <color name="blue">#0091EA</color>
+    <color name="purple">#C51162</color>
+    <color name="red">#DD0000</color>
+    <color name="yellow">#FFE500</color>
+<!--    <color name="color_welcome_text">#0C6A96</color>-->
+<!--    <color name="color_welcome_gradient_start">#30FF00AA</color>-->
+<!--    <color name="color_welcome_gradient_end">#4000AAFF</color>-->
+    <!--     <color name="logo_cube_1">#0040FF</color> -->
+    <!--     <color name="logo_cube_2">#FF0030</color> -->
+    <!--     <color name="logo_cube_3">#FFFFFF</color> -->
+    <!--     <color name="logo_cube_stroke_1">#800040FF</color> -->
+    <!--     <color name="logo_cube_stroke_2">#80FF0030</color> -->
+    <!--     <color name="logo_cube_stroke_3">#40000000</color> -->
+    <color name="logo_cube_1">#0040FF</color>
+    <color name="logo_cube_2">#FF0030</color>
+    <color name="logo_cube_3">#FFFFFF</color>
+    <color name="logo_cube_stroke_1">#800040FF</color>
+    <color name="logo_cube_stroke_2">#80FF0030</color>
+    <color name="logo_cube_stroke_3">#40000000</color>
+    <!--    <color name="back_splashscreen">#F7FFF9</color>-->
+    <!--    <color name="logo_line">#51B069</color>-->
+    <!--    <color name="logo_splashscreen">#5AC775</color>-->
+    <!--    <color name="logo_line_splashscreen">#5AC775</color>-->
+    <!--    <color name="back_splashscreen">#F6F6FF</color>-->
+    <!--    <color name="logo_line">#00E05E</color>-->
+    <!--    <color name="logo_splashscreen">#CC00E05E</color>-->
+    <!--    <color name="back_splashscreen">#F6F6FF</color>-->
+
+    <!--    <color name="logo_back">#E1FFE8</color>-->
+    <!--    <color name="logo">#03C03C</color>-->
+    <!--    <color name="logo_line">#03C03C</color>-->
+    <!--    <color name="splashscreen_back">#F7FFF9</color>-->
+    <!--    <color name="splashscreen">#03C03C</color>-->
+    <!--    <color name="splashscreen_line">#03C03C</color>-->
+
+    <color name="logo_back">#03C03C</color>
+    <color name="logo">#E1FFE8</color>
+    <color name="logo_line">#E1FFE8</color>
+    <color name="splashscreen_back">#29C258</color>
+    <color name="splashscreen">#E1FFE8</color>
+    <color name="splashscreen_line">#00E1FFE8</color>
+
+    <!--    <color name="back_splashscreen">#E3F2FD</color>-->
+    <!--    <color name="logo_line">#1976D2</color>-->
+    <!--    <color name="logo_splashscreen">#1976D2</color>-->
+    <!--    <color name="back_splashscreen">#1E88E5</color>-->
+    <!--    <color name="logo_line">#E3F2FD</color>-->
+    <!--    <color name="logo_splashscreen">#E3F2FD</color>-->
+</resources>
