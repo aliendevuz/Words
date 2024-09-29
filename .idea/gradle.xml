@@ -14,11 +14,16 @@
             <option value="$PROJECT_DIR$/app/ui" />
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/test" />
-            <option value="$PROJECT_DIR$/test/constants" />
+            <option value="$PROJECT_DIR$/test/constant" />
             <option value="$PROJECT_DIR$/test/linker" />
             <option value="$PROJECT_DIR$/test/manager" />
             <option value="$PROJECT_DIR$/test/pager" />
             <option value="$PROJECT_DIR$/test/ui" />
+            <option value="$PROJECT_DIR$/test/util" />
+            <option value="$PROJECT_DIR$/ztest" />
+            <option value="$PROJECT_DIR$/ztest/linker" />
+            <option value="$PROJECT_DIR$/ztest/pager" />
+            <option value="$PROJECT_DIR$/ztest/ui" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

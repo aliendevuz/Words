@@ -35,7 +35,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -45,6 +44,6 @@ dependencies {
     implementation(project(":test:pager"))
     implementation(project(":test:ui"))
     implementation(project(":test:manager"))
-    implementation(project(":test:constants"))
+    implementation(project(":test:constant"))
     implementation(project(":test:linker"))
 }

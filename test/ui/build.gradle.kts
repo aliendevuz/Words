@@ -31,5 +31,5 @@ dependencies {
     implementation(libs.androidx.core.splashscreen)
     implementation(project(":test:pager"))
     implementation(project(":test:manager"))
-    implementation(project(":test:constants"))
+    implementation(project(":test:constant"))
 }

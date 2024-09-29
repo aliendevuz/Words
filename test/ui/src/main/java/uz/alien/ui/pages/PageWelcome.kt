@@ -54,7 +54,10 @@ open class PageWelcome(private val pager: MainPager) : Page() {
         binding.tvWelcomeBrand.alpha = 0.0f
         binding.tvWelcomeProduct.alpha = 0.0f
 
-        startWelcome()
+        handler.postDelayed(pager.duration * 9) {
+
+            startWelcome()
+        }
         return false
     }
 
@@ -151,7 +154,7 @@ open class PageWelcome(private val pager: MainPager) : Page() {
                                     }
 
                                     Log.d("@@@@", "welcome background hide")
-                                    pager.openPage(PageFeature.self)
+                                    pager.feature?.let { pager.openPage(it) }
                                     Log.d("@@@@", "start welcome successfully finished!")
                                 }
                             }

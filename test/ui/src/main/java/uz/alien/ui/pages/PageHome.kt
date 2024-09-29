@@ -12,12 +12,14 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.postDelayed
 import uz.alien.pager.Page
+import uz.alien.pager.Pager
 import uz.alien.ui.MainPager
+import uz.alien.ui.databinding.PageForeHomeBinding
 import uz.alien.ui.sides.SideProfile
 
 open class PageHome(val pager: MainPager) : Page() {
 
-    private val binding = pager.binding.pageForeHome
+    val binding: PageForeHomeBinding = pager.binding.pageForeHome
 
     override val background = pager.binding.pageBackHome.root
     override val foreground = binding.root
@@ -164,16 +166,17 @@ open class PageHome(val pager: MainPager) : Page() {
         binding.etSearch.text.clear()
     }
 
+//    fun setBinding(binding: PageForeHomeBinding) {
+//        this.binding = binding
+//    }
+
     override fun init() {
         super.init()
-
-        self = this
 
         background.alpha = 0.0f
         background.visibility = View.GONE
 
         foreground.alpha = 0.0f
-        foreground.visibility = View.GONE
 
         binding.ibPanelTv.setOnClickListener {
             if (!isSearching) {
@@ -188,7 +191,7 @@ open class PageHome(val pager: MainPager) : Page() {
         }
 
         binding.bGeneral.setOnClickListener {
-            pager.openPage(self)
+            pager.openPage(this)
         }
 
         binding.bb1.setOnClickListener {
@@ -243,10 +246,5 @@ open class PageHome(val pager: MainPager) : Page() {
                 showSearch()
             }
         }
-    }
-
-    companion object {
-        @SuppressLint("StaticFieldLeak")
-        lateinit var self: PageHome
     }
 }

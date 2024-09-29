@@ -28,5 +28,5 @@ dependencies {
     implementation(project(":test:pager"))
     implementation(project(":test:ui"))
     implementation(project(":test:manager"))
-    implementation(project(":test:constants"))
+    implementation(project(":test:constant"))
 }

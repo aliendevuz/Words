@@ -2,8 +2,8 @@ package uz.alien.pager
 
 import android.animation.FloatEvaluator
 import android.animation.ValueAnimator
-import android.content.Context
 import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
@@ -17,21 +17,20 @@ import androidx.cardview.widget.CardView
 import androidx.core.os.postDelayed
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.viewbinding.ViewBinding
 
-abstract class Pager { // TODO Restyle Pager library to last version
+abstract class Pager(val activity: AppCompatActivity) { // TODO Restyle Pager library to last version
 
     // Main Properties
 
-    private lateinit var handler: Handler
-
-    var activity: AppCompatActivity? = null
+    lateinit var handler: Handler
 
     var insetsController: WindowInsetsControllerCompat? = null
 
     lateinit var root: ViewGroup
 
     private fun backPress() {
-        activity?.moveTaskToBack(true)
+        activity.moveTaskToBack(true)
     }
 
     fun showNavigation() {
@@ -104,21 +103,14 @@ abstract class Pager { // TODO Restyle Pager library to last version
         goBackMessage = ""
     }
 
-    open fun init(activity: AppCompatActivity) {
-
-        handler = Handler(activity.mainLooper)
-
-        this.activity = activity
-
+    open fun init() {
+        handler = Handler(Looper.getMainLooper())
         pages.clear()
-
         sides.clear()
-
         moves.clear()
     }
 
     fun setBackground(background: ViewGroup, showPagers: Runnable) {
-
         background.visibility = View.VISIBLE
         background.startAnimation(AnimationSet(true).apply {
             addAnimation(AlphaAnimation(0.0f, 1.0f).apply {
@@ -126,18 +118,14 @@ abstract class Pager { // TODO Restyle Pager library to last version
             })
         })
         background.alpha = 1.0f
-
-        handler.postDelayed(duration * 2) {
+        handler.postDelayed(duration * 6) {
             showPagers.run()
         }
     }
 
     fun firstPage(page: Page, systemBarDurationTimes: Int, duration: Long = this.duration * 2) {
-
-        handler.postDelayed(duration) {
-
+        handler.postDelayed(duration * 3) {
             openPage(page)
-
             handler.postDelayed(this.duration * systemBarDurationTimes) {
                 showSystemBars()
             }
@@ -604,7 +592,7 @@ abstract class Pager { // TODO Restyle Pager library to last version
         }
     }
 
-    fun back(context: Context) {
+    fun back() {
 
         if (isPagingAvailable) {
 
@@ -651,7 +639,7 @@ abstract class Pager { // TODO Restyle Pager library to last version
                                     backPress()
                                 }
                             } else {
-                                Toast.makeText(context, goBackMessage, Toast.LENGTH_SHORT).show()
+                                Toast.makeText(activity, goBackMessage, Toast.LENGTH_SHORT).show()
                             }
                         }
                     }

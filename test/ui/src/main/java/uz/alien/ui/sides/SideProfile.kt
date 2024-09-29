@@ -22,7 +22,7 @@ class SideProfile(override val pager: MainPager) : Side(pager) {
     override val back = binding.root
     override val side = binding.sideProfile
 
-    override val target = PageHome.self.foreground
+    override val target = pager.home!!.foreground
 
     override val direction = Direction.LEFT
 
